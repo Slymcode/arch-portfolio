@@ -60,7 +60,7 @@ const ProjectInspectionModal = ({
     setCurrentImg((prev) => (prev + 1) % project.images.length);
   const prevImg = () =>
     setCurrentImg(
-      (prev) => (prev - 1 + project.images.length) % project.images.length
+      (prev) => (prev - 1 + project.images.length) % project.images.length,
     );
 
   return (
@@ -262,8 +262,17 @@ const AboutModal = ({
                   <Briefcase size={12} /> Core Experience
                 </div>
                 <ul className="space-y-2 text-[10px] text-gray-400 font-mono uppercase">
-                  <li>• High-Rise Structural BIM</li>
-                  <li>• Parametric Facade Engineering</li>
+                  <li>• Architectural & Interior Design</li>
+                  <li>
+                    • 2D/3D CAD Modeling & Rendering(Autocad, Revit, 3D Max,
+                    Photoshop)
+                  </li>
+                  <li>• Building Construction & Site Supervision</li>
+                  <li>• Project Management & Coordination</li>
+                  <li>• Space Planning & Visualization</li>
+                  <li>• Cost Estimation & Technical Documentation</li>
+                  <li>• Health Safety & Environmental Standards</li>
+                  <li>• Client Relations & Presentation Skills</li>
                 </ul>
               </div>
               <div className="space-y-2">
@@ -271,8 +280,8 @@ const AboutModal = ({
                   <Award size={12} /> Accreditations
                 </div>
                 <ul className="space-y-2 text-[10px] text-gray-400 font-mono uppercase">
-                  <li>• LEED Certified</li>
-                  <li>• AIA Associate</li>
+                  <li>• AutoCAD Certified</li>
+                  <li>• Interior Expert</li>
                 </ul>
               </div>
             </div>
@@ -330,26 +339,26 @@ export default function Portfolio() {
       title: "Hotel 3D",
       image: "/img/hotel1/model2.jpg",
       images: ["/img/hotel1/model2.jpg", "/img/hotel1/model1.jpg"],
-      desc: "Modern hotel project exploring load-bearing glass structures.",
+      desc: "Visual experiences for refined hospitality design.",
       longDesc:
-        "This project explores the limits of load-bearing glass structures. By utilizing a hybrid steel-tension system, we achieved a 40-story verticality.",
+        "This project focuses on creating immersive and visually compelling 3D interior designs for modern hospitality spaces. The goal is to transform conceptual ideas into realistic environments that communicate atmosphere, luxury, comfort, and functionality before construction begins. Through detailed modeling, lighting, textures, and spatial planning, each area — from lobby and reception to guest rooms and lounges — is designed to reflect the brand identity of the hotel while enhancing the guest experience.",
       specs: [
-        { label: "Location", value: "Chicago, IL" },
-        { label: "Status", value: "Built // 2024" },
-        { label: "Tech", value: "Rhino / Karamba3D" },
+        { label: "Location", value: "Abuja, NG" },
+        { label: "Status", value: "Built // 2025" },
+        { label: "Tech", value: "Revit & V-Ray" },
       ],
     },
     {
       title: "Urban Hotel",
       image: "/img/hotel2/model.jpg",
       images: ["/img/hotel2/model.jpg"],
-      desc: "Urban context integration and modular design.",
+      desc: "Elegant spaces digitally brought to life.",
       longDesc:
-        "A study in urban density and hospitality functionality within constrained site parameters.",
+        "The design approach balances aesthetics with practicality, ensuring that circulation flow, furniture placement, lighting mood, and material selection all work together harmoniously. Attention is given to scale, ambiance, and emotional impact, allowing clients and stakeholders to fully visualize how the space will feel in real life. Every render is crafted to showcase not just the structure, but the experience of the space — elegance, warmth, and sophistication",
       specs: [
-        { label: "Location", value: "Chicago, IL" },
+        { label: "Location", value: "Abuja, NG" },
         { label: "Status", value: "Built // 2024" },
-        { label: "Tech", value: "Rhino" },
+        { label: "Tech", value: "Revit & V-Ray" },
       ],
     },
     {
@@ -359,12 +368,11 @@ export default function Portfolio() {
         "/img/residential/5 bedroom bungalow/a.jpg",
         "/img/residential/5 bedroom bungalow/b.jpg",
       ],
-      desc: "Exploring raw concrete textures and modern residential forms.",
+      desc: "Comfort designed at ground level.",
       longDesc:
-        "A re-interpretation of modernism focused on thermal mass efficiency and sculptural exposed concrete.",
+        "This bungalow interior design project focuses on creating a comfortable, functional, and aesthetically pleasing living environment that enhances everyday life. The design approach emphasizes simplicity, space efficiency, and a natural flow between rooms, ensuring that each area feels open, welcoming, and easy to use. Every element is carefully selected to balance style with comfort, making the home both beautiful and practical.",
       specs: [
-        { label: "Location", value: "Berlin, DE" },
-        { label: "Area", value: "12,400 m²" },
+        { label: "Location", value: "Abuja, NG" },
         { label: "Tech", value: "Revit" },
       ],
     },
@@ -377,13 +385,12 @@ export default function Portfolio() {
         "/img/residential/5bdr duplex/c.jpg",
         "/img/residential/5bdr duplex/d.jpg",
       ],
-      desc: "Parametric steel frameworks for residential use.",
+      desc: "Refined spaces for elevated lifestyle.",
       longDesc:
-        "Integrating native flora within a generative structural mesh, functioning as an urban lung.",
+        "This duplex interior design project is centered on creating a refined, functional, and visually striking living environment across two levels. The design approach focuses on achieving a seamless connection between floors while maintaining a clear sense of structure, flow, and spatial harmony. Each area is carefully planned to balance luxury, comfort, and practicality, ensuring the home feels both elegant and livable.",
       specs: [
-        { label: "Location", value: "Lagos, NG" },
-        { label: "Rating", value: "LEED Platinum" },
-        { label: "Tech", value: "Grasshopper" },
+        { label: "Location", value: "Abuja, NG" },
+        { label: "Tech", value: "Revit & V-Ray" },
       ],
     },
     {
@@ -393,12 +400,12 @@ export default function Portfolio() {
         "/img/residential/6 bedroom duplex/a.jpg",
         "/img/residential/6 bedroom duplex/b.jpg",
       ],
-      desc: "Parametric steel frameworks.",
-      longDesc: "Integrating native flora within a generative structural mesh.",
+      desc: "Vertical spaces elevated style.",
+      longDesc:
+        "Functionality plays a key role in the design process. Storage solutions, zoning of private and shared spaces, and ergonomic planning ensure that the home supports everyday living without sacrificing style. The combination of modern design elements with timeless details results in a space that feels luxurious yet welcoming.",
       specs: [
-        { label: "Location", value: "Lagos, NG" },
-        { label: "Status", value: "Competition Winner" },
-        { label: "Tech", value: "Grasshopper" },
+        { label: "Location", value: "Abuja, NG" },
+        { label: "Tech", value: "Revit & V-Ray" },
       ],
     },
     {
@@ -408,12 +415,12 @@ export default function Portfolio() {
         "/img/residential/duplex design/a.jpg",
         "/img/residential/duplex design/b.jpg",
       ],
-      desc: "Advanced residential spatial planning.",
+      desc: "Sophistication in every space.",
       longDesc:
-        "Focusing on natural ventilation and light penetration in high-density tropical climates.",
+        "This duplex interior design project showcases a well-balanced blend of elegance, functionality, and modern living across two connected levels. The design focuses on creating a smooth spatial flow while maintaining clear zoning between private and shared areas. Each floor is thoughtfully planned to ensure comfort, visual continuity, and efficient use of space, resulting in a home that feels open yet well-structured.",
       specs: [
         { label: "Location", value: "Lagos, NG" },
-        { label: "Tech", value: "Ladybug" },
+        { label: "Tech", value: "Revit & V-Ray" },
       ],
     },
     {
@@ -424,9 +431,9 @@ export default function Portfolio() {
         "/img/interior/b.jpg",
         "/img/interior/c.jpg",
       ],
-      desc: "Minimalist interior rendering and material study.",
+      desc: "Function, conform and style",
       longDesc:
-        "Bespoke interior solutions combining sustainable timber and industrial steel elements.",
+        "The interior design focuses on creating a balanced blend of functionality, comfort, and visual appeal. Every element, from layout and lighting to materials and furnishings, is thoughtfully selected to enhance both usability and atmosphere. The result is a refined space that feels welcoming, modern, and purposefully designed.",
       specs: [
         { label: "Style", value: "Modern Minimalist" },
         { label: "Software", value: "3ds Max / V-Ray" },
